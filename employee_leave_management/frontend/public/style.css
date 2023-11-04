@@ -1,0 +1,131 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(27, 133, 106);
+  color: #333;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: #cbcbcb;
+}
+
+.app-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #3498db;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.app-main {
+  padding: 20px 0;
+}
+
+.app-section {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.app-section h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+form input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+form button[type="submit"] {
+  background-color: #27ae60;
+  color: #ffffff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form button[type="submit"]:hover {
+  background-color: #219653;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #2c3e50;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #444;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input[type="file"]:focus,
+input[type="file"]:valid {
+  border-color: #007bff;
+}

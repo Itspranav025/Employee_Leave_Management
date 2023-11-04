@@ -1,0 +1,24 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+  backend:
+    build:
+      context: ./backend
+    environment:
+      - DB_HOST=192.168.1.4
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: fullstacktaskdb
+    ports:
+      - "5432:5432"
